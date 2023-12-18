@@ -1,14 +1,10 @@
-# Examen
+# PRUEBA - Movie and Series App
+
+This Angular application interacts with The Movie Database (TMDb) API, providing information about movies and series. You can explore popular lists, get specific details, and perform searches.
 
 ## Amplify
 
 https://main.d4yhjf599zyca.amplifyapp.com/
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
-
-# Movie and Series App
-
-This Angular application interacts with The Movie Database (TMDb) API, providing information about movies and series. You can explore popular lists, get specific details, and perform searches.
 
 ## Configuration
 
@@ -38,3 +34,4 @@ export const API_KEY = 'YOUR_API_KEY';
 export const API_URL = 'https://api.themoviedb.org/3';
 
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
