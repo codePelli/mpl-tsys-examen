@@ -18,7 +18,7 @@ export class ApiserviceService {
   constructor(private http: HttpClient) { }
 
   getSeries(): Observable<any> {
-    const url = `https://api.themoviedb.org/3/tv/popular?language=en-US&page=1&api_key=b1138baa2f255e1ed451defcd6454564`;
+    const url = `https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&page=1`;
     return this.http.get<any[]>(url);
   }
   

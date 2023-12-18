@@ -1,19 +1,24 @@
-<div class="home-container">
-    <div>
+<div class="container home-container">
+    <div class="popular-section">
         <h2>Popular Movies</h2>
-        @for (movie of popularMovies; track $index) {
-            <div>
+        <div class="movie-list">
+            @for (movie of popularMovies; track $index) {
+            <div class="movie-card">
                 {{ movie?.title }}
             </div>
-        }
+            }
+
+        </div>
     </div>
 
-    <div>
+    <div class="popular-section">
         <h2>Popular Series</h2>
-        @for (series of popularSeries; track $index) {
-            <div>
+        <div class="series-list">
+            @for (series of popularSeries; track $index) {
+            <div class="series-card">
                 {{ series?.title }}
             </div>
-        }
+            }
+        </div>
     </div>
 </div>

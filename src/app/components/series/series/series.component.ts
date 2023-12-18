@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiserviceService } from '../../../services/apiservice.service';
 import { RouterLink } from '@angular/router';
+import { Series } from '../../../models/series';
 
 @Component({
   selector: 'app-series',

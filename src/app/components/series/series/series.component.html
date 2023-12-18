@@ -1,14 +1,17 @@
 <div class="container">
-    <h2 class="text-center mt-4 mb-4">Lista de Series</h2>
+    <h2 class="text-center mt-4 mb-4">List of Series</h2>
 
-    <div class="series-container">
+    <div class="movies-container">
         @for (serie of series; track $index) {
-        <div class="series-card">
-            <div class="series-details">
-                <h4>{{ series.name }}</h4>
-                <p>Title: {{ series.original_name }}</p>
-                <p>Release date: {{ series.first_air_date }}</p>
-                <a [routerLink]="['/series-details', series.id]" class="btn btn-warning w-100">More info</a>
+        <div class="movie-card">
+            <div class="movie-details">
+                <h4>{{ serie.name }}</h4>
+                <img src="https://image.tmdb.org/t/p/w500/{{serie.poster_path
+                }}">
+                <p>Title: {{ serie.original_name }}</p>
+                <p>Release date: {{ serie.first_air_date}}</p>
+                <p><strong>Overview:</strong> {{ serie.overview }}</p>
+                <a [routerLink]="['/movie-details/', serie.id]" class="btn btn-warning w-100 mb-4">More info</a>
             </div>
         </div>
         }

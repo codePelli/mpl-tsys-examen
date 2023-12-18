@@ -19,6 +19,7 @@ export class MoviesComponent implements OnInit {
 
     this.apiService.getMovies().subscribe(
       data => {
+        console.log(data.results);
         this.movies = data.results;
       },
       error => {
