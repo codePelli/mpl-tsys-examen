@@ -1,0 +1,18 @@
+<div class="container">
+    <h2 class="text-center mt-4 mb-4">Lista de Películas</h2>
+
+    <div class="movies-container">
+        @for (movie of movies; track $index) {
+        <div class="movie-card">
+            <div class="movie-details">
+                <h4>{{ movie.title }}</h4>
+                <p>Title: {{ movie.original_title }}</p>
+                <p>Release date: {{ movie.release_date }}</p>
+                <p><strong>Overview:</strong> {{ movie.overview }}</p>
+                <a [routerLink]="['/movie-details/', movie.id]" class="btn btn-warning w-100">More info</a>
+            </div>
+        </div>
+        }
+
+    </div>
+</div>

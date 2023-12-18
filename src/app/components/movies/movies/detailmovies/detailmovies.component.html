@@ -1,0 +1,15 @@
+@if (movieDetails) {
+<div class="container mt-4">
+    <h2 class="text-center mb-4">{{ movieDetails.title }}</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://image.tmdb.org/t/p/w500/%7B%7Bcharacter.poster_path%7D%7D" alt="{{ movieDetails.title }}" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <p><strong>Title:</strong> {{ movieDetails.original_title }}</p>
+            <p><strong>Release date:</strong> {{ movieDetails.release_date }}</p>
+            <p><strong>Overview:</strong> {{ movieDetails.overview }}</p>
+        </div>
+    </div>
+</div>
+}

@@ -1,0 +1,19 @@
+<div class="home-container">
+    <div>
+        <h2>Popular Movies</h2>
+        @for (movie of popularMovies; track $index) {
+            <div>
+                {{ movie?.title }}
+            </div>
+        }
+    </div>
+
+    <div>
+        <h2>Popular Series</h2>
+        @for (series of popularSeries; track $index) {
+            <div>
+                {{ series?.title }}
+            </div>
+        }
+    </div>
+</div>

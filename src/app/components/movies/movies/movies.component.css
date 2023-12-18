@@ -1,0 +1,32 @@
+.container {
+    margin-top: 20px;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #267bb8;
+    border-color: #267bb8;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 class="text-center mt-4 mb-4">Lista de Series</h2>
+
+    <div class="series-container">
+        @for (serie of series; track $index) {
+        <div class="series-card">
+            <div class="series-details">
+                <h4>{{ series.name }}</h4>
+                <p>Title: {{ series.original_name }}</p>
+                <p>Release date: {{ series.first_air_date }}</p>
+                <a [routerLink]="['/series-details', series.id]" class="btn btn-warning w-100">More info</a>
+            </div>
+        </div>
+        }
+
+    </div>
+</div>
