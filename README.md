@@ -6,26 +6,35 @@ https://main.d4yhjf599zyca.amplifyapp.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
 
-## Development server
+# Movie and Series App
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This Angular application interacts with The Movie Database (TMDb) API, providing information about movies and series. You can explore popular lists, get specific details, and perform searches.
 
-## Code scaffolding
+## Configuration
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Get a TMDb API Key
 
-## Build
+Before using the application, you'll need a valid API key from TMDb. Follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Sign up at [TMDb Developer](https://www.themoviedb.org/settings/api).
+2. Copy your generated API key.
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Popular Movies: Get a list of currently trending movies using the endpoint /trending/movie/day.
+2. Popular Series: Explore currently popular TV series using the endpoint /tv/popular.
+3. Movie Details: View detailed information about a specific movie using the endpoint /movie/{movieId}.
+4. Series Details: Explore in-depth details of a specific TV series using the endpoint /tv/{seriesId}.
+5. Search Functionality: Search for movies and series using various criteria with appropriate endpoints.
 
-## Running end-to-end tests
+### Set Up API Key
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Update the `api-constants.ts` file with your API key:
 
-## Further help
+```typescript
+// api-constants.ts
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+export const API_KEY = 'YOUR_API_KEY';
+export const API_URL = 'https://api.themoviedb.org/3';
+
+
